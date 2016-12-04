@@ -34,8 +34,10 @@
     "babylon": "6.14.1",
     "lazy": "1.0.11",
     "nativescript-dev-android-snapshot": "^0.*.*",
+    "nativescript-dev-sass": "^0.4.1",
     "nativescript-dev-typescript": "^0.3.2",
-    "zone.js": "~0.6.21",
-    "typescript": "^2.0.10"
+    "nativescript-dev-webpack": "^0.0.20",
+    "typescript": "^2.0.10",
+    "zone.js": "~0.6.21"
   }
 }

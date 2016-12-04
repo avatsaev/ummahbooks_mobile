@@ -12,16 +12,12 @@ import utilityModule = require("utils/utils");
   styleUrls: ["book/book.component.css"]
 })
 
-
 export default class BookComponent implements OnInit, AfterViewInit{
-
 
   book:Book
 
-
   constructor(
     private route:ActivatedRoute,
-
   ){}
 
   showInfo(){
@@ -35,8 +31,6 @@ export default class BookComponent implements OnInit, AfterViewInit{
       cancelButtonText: "Cancel",
       actions: this.book.availableLinks()
     }).then(result => {
-      console.log("Dialog result: " + result)
-
       switch (result){
         case "Epub":
           console.log("get epub link");
@@ -65,7 +59,6 @@ export default class BookComponent implements OnInit, AfterViewInit{
 
     this.book = this.route.snapshot.data['book'];
     this.book.fetchCoverImage();
-    console.dump(this.book)
 
     // this.route.params.subscribe(params => {
     //
